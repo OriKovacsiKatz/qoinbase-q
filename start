@@ -1,0 +1,15 @@
+# Coinbase Pro API config
+
+QCMD="$QHOME/l64/q"
+
+if  [ -x "$(command -v rlwrap)" ]; then
+  QCMD="rlwrap -r $QCMD"
+fi
+
+export CBPRO_APP_DIR="$PWD";
+# Enter Coinbase Pro credentials
+export CBPRO_API_KEY=""
+export CBPRO_API_SECRET=""
+export CBPRO_API_PASSPHRASE=""
+
+$QCMD cbpro.q "$@"

@@ -1,0 +1,10 @@
+name: cbpro
+channels:
+    - kx
+dependencies:
+- python>=3.5
+- msimonelli::extendpy
+- openssl=1.0.2
+- pip
+- pip:
+  - "git+https://github.com/michaelsimonelli/qoinbase-py.git"
